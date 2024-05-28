@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DecodingTrust</title>
+    <title>MultiTrust</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,7 +19,11 @@
         }
         .header h1 {
             margin: 0;
-            font-size: 48px;
+            font-size: 36px;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 18px;
         }
         .navbar {
             display: flex;
@@ -56,6 +60,10 @@
         .content ul li {
             margin: 5px 0;
         }
+        .abstract {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -69,23 +77,20 @@
     </div>
     <div class="header">
         <h1>MultiTrust</h1>
-        <h2> Comprehensive Benchmark for Trustworthy Multimodal Large Language Models</h2>
+        <h2>Comprehensive Benchmark for Trustworthy Multimodal Large Language Models</h2>
     </div>
     <div class="container">
         <div class="content">
-            <h2>What is DecodingTrust?</h2>
-            <p>DecodingTrust aims at providing a thorough assessment of trustworthiness in GPT models...</p>
-            <ul>
-                <li>Toxicity</li>
-                <li>Stereotype and bias</li>
-                <li>Adversarial robustness</li>
-                <li>Out-of-Distribution Robustness</li>
-                <li>Privacy</li>
-                <li>Robustness to Adversarial Demonstrations</li>
-                <li>Machine Ethics</li>
-                <li>Fairness</li>
+            <h2>Abstract</h2>
+            <ul class="abstract">
+                <li><strong>MLLMs Potential:</strong> Multimodal Large Language Models (MLLMs) show great potential as foundation models in the pursuit of Artificial General Intelligence (AGI).</li>
+                <li><strong>Trustworthiness Challenges:</strong> Despite their impressive capabilities, MLLMs face significant trustworthiness challenges, such as factual inaccuracies, harmful generations, and privacy breaches.</li>
+                <li><strong>Limited Assessment:</strong> Current literature lacks a comprehensive evaluation of trustworthy MLLMs, limiting insights into future improvements.</li>
+                <li><strong>MultiTrust Benchmark:</strong> MultiTrust is established as the first unified benchmark on the trustworthiness of MLLMs across five primary aspects: truthfulness, safety, robustness, fairness, and privacy.</li>
+                <li><strong>Evaluation Strategy:</strong> The benchmark employs a rigorous evaluation strategy addressing multimodal risks and cross-modal impacts, encompassing 32 diverse tasks with self-curated datasets.</li>
+                <li><strong>Experimental Findings:</strong> Extensive experiments with 21 modern MLLMs reveal critical issues and risks, highlighting the complexities introduced by multimodality and the need for advanced methodologies to enhance reliability.</li>
+                <li><strong>Open-source Platform:</strong> A scalable platform for standardized trustworthiness research is released to facilitate future advancements in this vital field.</li>
             </ul>
-            <p><strong>Our paper received the Outstanding Paper Award at NeurIPS'23.</strong></p>
         </div>
     </div>
 </body>
