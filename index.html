@@ -1,10 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome to My Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecodingTrust</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #0d47a1;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #0d47a1;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #0b3c8a;
+        }
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .content h2 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+        .content p {
+            line-height: 1.6;
+        }
+        .content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .content ul li {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my project page hosted with GitHub Pages.</p>
+    <div class="header">
+        <h1>DecodingTrust</h1>
+        <p>Comprehensive Assessment of Trustworthiness in GPT Models</p>
+    </div>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">GitHub</a>
+        <a href="#">Paper</a>
+        <a href="#">Explore</a>
+        <a href="#">Demo</a>
+        <a href="#">Leaderboard</a>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h2>What is DecodingTrust?</h2>
+            <p>DecodingTrust aims at providing a thorough assessment of trustworthiness in GPT models...</p>
+            <ul>
+                <li>Toxicity</li>
+                <li>Stereotype and bias</li>
+                <li>Adversarial robustness</li>
+                <li>Out-of-Distribution Robustness</li>
+                <li>Privacy</li>
+                <li>Robustness to Adversarial Demonstrations</li>
+                <li>Machine Ethics</li>
+                <li>Fairness</li>
+            </ul>
+            <p><strong>Our paper received the Outstanding Paper Award at NeurIPS'23.</strong></p>
+        </div>
+    </div>
 </body>
 </html>
+
