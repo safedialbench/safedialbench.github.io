@@ -57,6 +57,7 @@
             margin: 20px auto 0 auto;
             background-color: white;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            flex: 1;
         }
         .content h2 {
             font-size: 28px;
@@ -82,10 +83,25 @@
             font-size: 16px;
             margin-bottom: 20px;
         }
-        .advantage, .framework, .models {
+        .advantage, .framework, .models, .acknowledgements {
             margin-top: 20px;
             padding-top: 5px;
             padding-bottom: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -149,5 +165,16 @@
                 </div>
             </div>
         </div>
+        <div style="height: 10px;"></div>
+       <div class="container acknowledgement">
+            <div class="content">
+                <h2>Acknowledgements</h2>
+                <p>In Order to carry out our experiment, we turned to models such as <a href = "https://github.com/Vision-CAIR/MiniGPT-4" style="color:blue;">MiniGPT-4</a>, <a href = "https://github.com/haotian-liu/LLaVA" style="color:blue;">LLava</a>, <a href = "https://github.com/THUDM/CogVLM" style="color:blue;">CogVLM</a> and so on, we turned to data set such as Vizwiz, Vispr and so on.We sincerely thank them for their contributions.</p> 
+            </div>
+        </div>
+        <div class="footer">
+        <div>&#169; Powered by Tsinghua University</div>
+        <div><strong><a href="https://trustworthymllm.github.io" target="_blank">Multitrust</a></strong></div>
+    </div>
     </body>
 </html>
