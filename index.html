@@ -41,6 +41,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./data/model_scores.js" defer></script>
+  <script src="./static/js/leaderboard_multitrust.js"></script> 
 </head>
 <body>
 
@@ -168,7 +170,7 @@
           </span>
           <!-- Leaderboard Link. -->
           <span class="link-block">
-            <a href="https://mathvista.github.io/#leaderboard"
+            <a href="https://multi-trust.github.io/#leaderboard"
                class="external-link button is-normal is-rounded is-dark">
               <span class="icon">
                   <p style="font-size:18px">🏆</p>
@@ -184,11 +186,12 @@
 </div>
 
 <section class="section">
-  <div class="container" style="margin-bottom: 2vh;">
+  <div class="container" style="margin-bottom: 2vh; margin-top: 2vh">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Introduction</h2>
+        <img src="static/images/framework.png" alt="framework" width="95%"/>
         <div class="content has-text-justified">
           <p>
             Despite the superior capabilities of <b>Multimodal Large Language Models (MLLMs)</b> across diverse tasks, they still face significant trustworthiness challenges. Yet, current literature on the assessment of trustworthy MLLMs remains limited, lacking <b>a holistic evaluation</b> to offer thorough insights into future improvements.
@@ -200,7 +203,6 @@
             Extensive experiments with 21 modern MLLMs reveal some previously unexplored trustworthiness issues and risks, highlighting the complexities introduced by the multimodality and underscoring the necessity for advanced methodologies to enhance their reliability. For instance, typical proprietary models still struggle with the perception of visually confusing images and are vulnerable to multimodal jailbreaking and adversarial attacks; MLLMs are more inclined to disclose privacy in text and reveal ideological and cultural biases even when paired with irrelevant images in inference, indicating that the multimodality amplifies the internal risks from base LLMs.
           </p>
         </div>
-        <img src="static/images/framework.png" alt="framework" width="95%"/>
       </div>
     </div>
     <!--/ Abstract. -->
@@ -231,7 +233,7 @@
   <div class="container" style="margin-bottom: 2vh;">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3" id="leaderboard">Leaderboard reported in paper</h2>
+        <h2 class="title is-3" id="leaderboard">Leaderboard in MultiTrust</h2>
         <img src="static/images/rankings.png" alt="rankings" width="95%"/>
         <div class="content has-text-justified">
           <p class="mt-3">
@@ -241,21 +243,27 @@
       </div>
     </div>
   </div>
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full has-text-centered content">
+        <div class="content">
+          <p class="title is-5">Scores on each sub-aspect of MultiTrust
+          </p>
+          <div id="multitrust_leaderboard"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-
-
 
 
 <!-- @PAN TODO: bibtex -->
 <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
+  <div class="container is-max-desktop content" style="margin-bottom: 2vh;">
     <h2 class="title is-3 has-text-centered">BibTeX</h2>
-    <pre><code>@inproceedings{lu2024mathvista,
-  author    = {Lu, Pan and Bansal, Hritik and Xia, Tony and Liu, Jiacheng and Li, Chunyuan and Hajishirzi, Hannaneh and Cheng, Hao and Chang, Kai-Wei and Galley, Michel and Gao, Jianfeng},
-  title     = {MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts},
-  booktitle={International Conference on Learning Representations (ICLR)},
-  year      = {2024}
-}</code></pre>
+    <pre><code>
+      Waiting for Arxiv
+    </code></pre>
   </div>
 </section>
 

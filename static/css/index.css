@@ -2,6 +2,11 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.section, .section { 
+  margin: 0; 
+  padding: 0; 
+} 
+
 .header {
   background-color: #56309f;
   color: white;
