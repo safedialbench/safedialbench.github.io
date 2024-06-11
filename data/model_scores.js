@@ -1,6 +1,6 @@
 score_table = {
   "1": {
-    "Model": "GPT-4(Vision)-1106\ud83e\udd47",
+    "Model": "GPT-4-Vision\ud83e\udd47",
     "Source": "https://platform.openai.com/docs/models/gpt-4-turbo-and-gpt-4",
     "Avg.": 78.27940833299999,
     "T.I": 75.06,
