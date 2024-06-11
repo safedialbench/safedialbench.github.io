@@ -1,183 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MultiTrust</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        .header {
-            background-color: #56309f;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            position: relative;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 48px;
-            line-height: 1.5;
-        }
-        .header h2 {
-            margin: 0;
-            font-size: 24px;
-            line-height: 2.0;
-        }
-        .header .author-block {
-            color: #bcb0e0;
-            margin-top: 5px;
-            font-size: 16px;
-        }
-        .navbar {
-            display: flex;
-            justify-content: center;
-            background-color: #56309f;
-            padding: 10px 0;
-        }
-        .navbar a {
-            color: #56309f;
-            padding: 10px 20px;
-            text-decoration: none;
-            text-align: center;
-            margin: 0 20px;
-            border-radius: 5px;
-            background-color: white;
-        }
-        .navbar a:hover {
-            background-color: #1565c0;
-        }
-        .container {
-            padding: 5px;
-            max-width: 900px;
-            margin: 20px auto 0 auto;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            flex: 1;
-        }
-        .content h2 {
-            font-size: 35px;
-            margin-top: 15px;
-            text-align: center;
-            border-bottom: 2.2px solid #d3d3d3;
-        }
-        .content h2 img {
-            margin-right: 10px;
-            width: 35px;
-            height: 35px;
-        }
-        .content p {
-            line-height: 1.8;
-            text-indent: 2em;
-        }
-        .content li {
-            line-height: 1.6;
-        }
-        .content ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .content ul li {
-            margin: 5px 0;
-        }
-        .abstract {
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-        .advantage, .framework, .models, .acknowledgements {
-            margin-top: 20px;
-            padding-top: 5px;
-            padding-bottom: 20px;
-        }
-        .footer {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .footer a {
-            color: white;
-            text-decoration: none;
-        }
-        .footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Benchmarking Trustworthiness of Multimodal Large Language Models">
+  <meta name="keywords" content="MultiTrust, MMTrustEval">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> MultiTrust </title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
+  <!-- <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+/Users/panlu/Library/Mobile Documents/com~apple~CloudDocs/ImageMath/visual-mathqa-server/data_final/images
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <link rel="icon" href="./static/images/multitrust.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/leaderboard.css">
+
+  <!-- <link href="https://unpkg.com/tabulator-tables@5.5.2/dist/css/tabulator_bulma.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.5.2/dist/js/tabulator.min.js"></script> -->
+  <script type="text/javascript" src="static/js/sort-table.js" defer></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
 </head>
 <body>
-        <div class="header">
-            <h1>MultiTrust</h1>
-            <h2>Comprehensive Benchmark for Trustworthy Multimodal Large Language Models</h2>
-            <span class="author-block"><b style="color:orange; font-weight:normal">&#x25B6; </b> <strong>Tsinghua University</strong><b style="color:orange; font-weight:normal">&#x25B6;</b> <strong>Beihang University</strong><b style="color:orange; font-weight:normal">&#x25B6; </b> <strong>Shanghai Jiaotong University</strong><b style="color:orange; font-weight:normal">&#x25B6; </b> <strong>RealAI</strong></span>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <!-- <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a> -->
+      <!-- @PAN TODO: consider adding links? -->
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <!-- <a class="navbar-item" href="https://chameleon-llm.github.io/">
+            <b>Chameleon</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
+          </a> -->
         </div>
-        <div class="navbar">
-          <a href="https://github.com/thu-ml/MMTrustEval"><strong>GitHub</strong></a>
-            <a href="#"><strong>Arxiv</strong></a>
-            <a href="#"><strong>Explore</strong></a>
-            <a href="#"><strong>Demo</strong></a>
-        </div>
-        <div class="container">
-            <div class="content">
-                <h2><img src="https://github.com/trustworthymllm/trustworthymllm.github.io/blob/main/Abstract.png?raw=true">Abstract</h2>
-                <ul class="abstract">
-                    <p>There are no comprehensive evaluations for the trustworthiness evaluation of multimodal large language models (<strong>MLLMs</strong>), so we have done the following work to establish a unified evaluation benchmark.</p>
-                    <li><strong>1. MultiTrust Benchmark:</strong> MultiTrust is established as the first unified benchmark on the trustworthiness of MLLMs across five primary aspects: truthfulness, safety, robustness, fairness, and privacy.</li>
-                    <li><strong>2. Evaluation Strategy:</strong> The benchmark employs a rigorous evaluation strategy addressing multimodal risks and cross-modal impacts, encompassing 32 diverse tasks with self-curated datasets.</li>
-                    <li><strong>3. Experimental Findings:</strong> Extensive experiments with 21 modern MLLMs reveal critical issues and risks, highlighting the complexities introduced by multimodality and the need for advanced methodologies to enhance reliability.</li>
-                    <li><strong>4. Open-source Platform:</strong> A scalable platform for standardized trustworthiness research is released to facilitate future advancements in this vital field.</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div style="height: 10px;"></div>
-        
-        <div class="container">
-            <div class="content advantage">
-                <h2><img src="https://github.com/trustworthymllm/trustworthymllm.github.io/blob/main/Advantage.jpg?raw=true" style="width: 60px">Our Advantage</h2>
-                <p>MultiTrust is the first unified benchmark to comprehensively assess the trustworthiness of multimodal Large Language Models (MLLMs) across five main dimensions of authenticity, security, robustness, fairness, and privacy. It takes into account not only the multimodal risks introduced by MLLMs in new scenarios, but also the cross-modal effects of visual input on text-only tasks, providing a more comprehensive assessment.</p>
-                <div class="image-container">
-                    <img src="https://github.com/trustworthymllm/trustworthymllm.github.io/blob/main/image1.png?raw=true" alt="Descriptive Alt Text" style="max-width: 100%; height: auto; width: 1000px;">
-                </div>
-            </div>
-        </div>
-    <div style="height: 10px;"></div>
-    <div class="container framework">
-            <div class="content">
-                <h2><img src="https://github.com/trustworthymllm/trustworthymllm.github.io/blob/main/Framework.jpg?raw=true">Framework</h2>
-                <p>MultiTrust has designed a series of tasks to simulate real-world application scenarios. These tasks include both discriminative and generative tasks, covering multiple levels from basic perceptual ability to higher cognitive reasoning.</p>
-                <p>MultiTrust evaluates using self-curated datasets that are created through data synthesis (e.g., using Stable Diffusion and GPT-4V) and manual collection to ensure diversity and realism of the assessment.</p>
-                <div class="image-container">
-                    <img src="https://github.com/trustworthymllm/trustworthymllm.github.io/blob/main/image2.png?raw=true" alt="Framework Image" style="max-width: 100%; height: auto; width: 1000px;">
-                </div>
-            </div>
-        </div>
-        <div style="height: 10px;"></div>
-        <div class="container models">
-            <div class="content">
-                <h2><img src="https://github.com/trustworthymllm/trustworthymllm.github.io/blob/main/Model.jpg?raw=true">Model Zoo</h2>
-                <p>We conducted experiments on <strong>21 models (including 4 closed-source models and 17 open-source models)</strong> with a total of 32 carefully curated subtasks from five dimensions, and the models are shown in the table below.</p>
-                <div class="image-container">
-                    <img src="https://github.com/trustworthymllm/trustworthymllm.github.io/blob/main/image3.jpg?raw=true" alt="Framework Image" style="max-width: 100%; height: auto; width: 1000px;">
-                </div>
-            </div>
-        </div>
-       <div style="height: 10px;"></div>
-       <div class="container acknowledgement">
-            <div class="content">
-                <h2><img src="https://github.com/trustworthymllm/trustworthymllm.github.io/blob/main/Acknowledgement.jpg?raw=true">Acknowledgements</h2>
-                <p>In order to carry out our experiment, we turned to models such as <a href = "https://github.com/Vision-CAIR/MiniGPT-4" style="color:blue;">MiniGPT-4</a>, <a href = "https://github.com/haotian-liu/LLaVA" style="color:blue;">LLava</a>, <a href = "https://github.com/THUDM/CogVLM" style="color:blue;">CogVLM</a> and so on, we turned to data set such as Vizwiz, Vispr and so on.We sincerely thank them for their contributions.</p> 
-            </div>
-        </div>
-        <div style="height: 20px;"></div>
-        <div class="footer">
-        <div>&#169; Powered by the reaserchers</div>
-        <div><strong><a href="https://trustworthymllm.github.io" target="_blank">Multitrust</a></strong></div>
       </div>
-    </body>
+    </div>
+  </div>
+</nav>
+
+
+<div class="header">
+  <div class="container is-widescreen">
+  <div class="columns is-centered">
+    <div class="column has-text-centered">
+      <h1>
+        <img src="static/images/multitrust.png" style="width:1.8em;vertical-align: middle" alt="Logo"/>
+        <span style="vertical-align: middle"> MultiTrust </span>
+      </h1>
+      <h2 class="is-size-3">Benchmarking Trustworthiness of Multimodal Large Language Models:</h2><h2 class="is-size-3">A Comprehensive Study</h2>
+      <div class="is-size-5 publication-authors">
+        <br>
+        <span class="author-block">
+          <a href="https://zycheiheihei.github.io/">Yichi Zhang</a><sup style="color:#1db2ec">1</sup>,</span>
+        <span class="author-block">
+          <a href="https://multi-trust.github.io/">Yao Huang</a><sup style="color:#f31a1a">2</sup>,</span>
+        <span class="author-block">
+          <a href="https://multi-trust.github.io/">Yitong Sun</a><sup style="color:#f31a1a">2</sup>,</span>
+        <span class="author-block">
+          <a href="https://multi-trust.github.io/">Chang Liu</a><sup style="color:#ffac33">3</sup>,</span>
+        <span class="author-block">
+          <a href="https://persistz.github.io/">Zhe Zhao</a><sup style="color:#ec1de2">4</sup>,</span>
+        <span class="author-block">
+          <a href="https://multi-trust.github.io/">Zhengwei Fang</a><sup style="color:#1db2ec">1</sup>,</span>
+        <span class="author-block">
+          <a href="https://multi-trust.github.io/">Yifan Wang</a><sup style="color:#1db2ec">1</sup>,</span>
+        <span class="author-block">
+          <a href="https://huanranchen.github.io/">Huanran Chen</a><sup style="color:#1db2ec">1</sup>,</span>
+        <span class="author-block">
+          <a href="https://ml.cs.tsinghua.edu.cn/~xiaoyang/">Xiao Yang</a><sup style="color:#1db2ec">1</sup>,</span>
+        <span class="author-block">
+          <a href="https://sites.google.com/site/xingxingwei1988/?pli=1">Xingxing Wei</a><sup style="color:#f31a1a">2</sup>,</span>
+        <span class="author-block">
+          <a href="https://www.suhangss.me/">Hang Su</a><sup style="color:#1db2ec">1</sup>,</span>
+        <span class="author-block">
+          <a href="https://ml.cs.tsinghua.edu.cn/~yinpeng/">Yinpeng Dong</a><sup style="color:#1db2ec">1</sup>,</span>
+        <span class="author-block">
+          <a href="https://ml.cs.tsinghua.edu.cn/~jun/index.shtml">Jun Zhu</a><sup style="color:#1db2ec">1</sup></span>
+      </div>
+
+      <div class="is-size-5 publication-authors">
+        <span class="author-block"><sup style="color:#1db2ec">1</sup>Tsinghua University,</span>
+        <span class="author-block"><sup style="color:#f31a1a">2</sup>Beihang University,</span>
+        <span class="author-block"><sup style="color:#ffac33">3</sup>Shanghai Jiaotong University,</span>
+        <span class="author-block"><sup style="color:#ec1de2">4</sup>RealAI</span>
+      </div>
+      <div class="column has-text-centered">
+        <div class="publication-links">
+          <!-- PDF Link. -->
+          <span class="link-block">
+            <!-- @PAN TODO: change links -->
+            <a href="https://multi-trust.github.io"
+               class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+              </span>
+              <span>Paper</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href="https://multi-trust.github.io"
+               class="external-link button is-normal is-rounded is-dark">
+            <!-- <a href="https://lupantech.github.io/papers/arxiv23_mathvista.pdf"
+               class="external-link button is-normal is-rounded is-dark"> -->
+              <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+              </span>
+              <span>arXiv</span>
+            </a>
+          </span>
+          <!-- Code Link. -->
+          <span class="link-block">
+            <a href="https://github.com/thu-ml/MMTrustEval"
+               class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="fab fa-github"></i>
+              </span>
+              <span>Code</span>
+              </a>
+          </span>
+          <!-- Dataset Link. -->
+          <span class="link-block">
+            <a href="https://github.com/thu-ml/MMTrustEval"
+               class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <!-- <i class="far fa-images"></i> -->
+                  <p style="font-size:18px">🔗</p>
+                  <!-- 🔗 -->
+              </span>
+              <span>Dataset</span>
+            </a>
+          </span>
+          <!-- Leaderboard Link. -->
+          <span class="link-block">
+            <a href="https://mathvista.github.io/#leaderboard"
+               class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <p style="font-size:18px">🏆</p>
+              </span>
+              <span>Leaderboard</span>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+          <p>
+            Despite the superior capabilities of <b>Multimodal Large Language Models (MLLMs)</b> across diverse tasks, they still face significant trustworthiness challenges. Yet, current literature on the assessment of trustworthy MLLMs remains limited, lacking <b>a holistic evaluation</b> to offer thorough insights into future improvements.
+          </p>
+          <p>
+            In this work, we establish <b>MultiTrust</b>, the first comprehensive and unified benchmark on the trustworthiness of MLLMs across five primary aspects: <i>truthfulness</i>, <i>safety</i>, <i>robustness</i>, <i>fairness</i>, and <i>privacy</i>. Our benchmark employs a rigorous evaluation strategy that addresses both <b>multimodal risks</b> and <b>cross-modal impacts</b>, encompassing 32 diverse tasks with self-curated datasets.
+          </p>
+          <p>
+            Extensive experiments with 21 modern MLLMs reveal some previously unexplored trustworthiness issues and risks, highlighting the complexities introduced by the multimodality and underscoring the necessity for advanced methodologies to enhance their reliability. For instance, typical proprietary models still struggle with the perception of visually confusing images and are vulnerable to multimodal jailbreaking and adversarial attacks; MLLMs are more inclined to disclose privacy in text and reveal ideological and cultural biases even when paired with irrelevant images in inference, indicating that the multimodality amplifies the internal risks from base LLMs.
+          </p>
+        </div>
+        <img src="static/images/framework.png" alt="framework" width="95%"/>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</div>
+</section>
+
+
+<section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" id="task">Task Pool</h2>
+        <!-- <img src="static/images/task-description.png" alt="task-description" width="70%"/> -->
+        <img src="static/images/task-list.png" alt="task-list" width="70%"/>
+        <div class="content has-text-justified">
+          <p class="mt-3">
+            <b>Task Overview:</b> We organize a two-level taxonomy containing 10 sub-aspects to better categorize the target behaviors to be evaluated. Based on the taxonomy, we curate 32 diverse tasks to cover realistic and comprehensive scenarios with trustworthy risks, including generative and discriminative, multimodal and text-only ones, as summarized above. To tackle the current lack of datasets dedicated for various scenarios under these sub-aspects, we construct 20 datasets based on the existing text, image, and multimodal datasets by adapting prompts, images, and annotations with both manual efforts and automatic methods. We further propose 8 novel datasets from scratch by collecting images from the Internet or synthesizing images with Stable Diffusion and other algorithms specifically for the designed tasks.<br> 
+            <img src="static/images/icon/circle-xmark-regular.svg" style="width:1.0em;vertical-align: middle" alt="circle-xmark"/> : off-the-shelf datasets from prior work; <img src="static/images/icon/circle-plus-solid.svg" style="width:1.0em;vertical-align: middle" alt="circle-plus"/> : datasets adapted to new tasks with additional images, prompts, and annotations; <img src="static/images/icon/circle-check-solid.svg" style="width:1.0em;vertical-align: middle" alt="circle-check"/> : datasets constructed from scratch. <img src="static/images/icon/file-image-regular.svg" style="width:1.0em;vertical-align: middle" alt="file-image"/> : tasks for revealing multimodal risks; <img src="static/images/icon/file-lines-regular.svg" style="width:1.0em;vertical-align: middle" alt="file-text"/> : tasks for studying cross-modal impacts. <img src="static/images/icon/circle-regular.svg" style="width:1.0em;vertical-align: middle" alt="circle"/> : rule-based evaluation (e.g., keywords matching); <img src="static/images/icon/circle-solid.svg" style="width:1.0em;vertical-align: middle" alt="circle-solid"/> : automatic evaluation by GPT-4 or other classifiers; <img src="static/images/icon/circle-half-stroke-solid.svg" style="width:1.0em;vertical-align: middle" alt="circle-left"/> : mixture evaluation. ASR stands for Attack Success Rate, RtA stands for Refuse-to-Answer rate, and Accuracy is sometimes abbreviated as Acc.
+          </p>  
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" id="leaderboard">Leaderboard reported in paper</h2>
+        <img src="static/images/rankings.png" alt="rankings" width="95%"/>
+        <div class="content has-text-justified">
+          <p class="mt-3">
+            <b>Left:</b> Rankings of MLLMs in each sub-aspect of MultiTrust. <b>Right:</b> (a) Correlation between the overall rankings of trustworthiness and those of general capabilities based on MMBench and MME. Top-8 are marked. (b) Pearson Correlation Coefficients between sub-aspects.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- @PAN TODO: bibtex -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3 has-text-centered">BibTeX</h2>
+    <pre><code>@inproceedings{lu2024mathvista,
+  author    = {Lu, Pan and Bansal, Hritik and Xia, Tony and Liu, Jiacheng and Li, Chunyuan and Hajishirzi, Hannaneh and Cheng, Hao and Chang, Kai-Wei and Galley, Michel and Gao, Jianfeng},
+  title     = {MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year      = {2024}
+}</code></pre>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <!-- <div class="container"> -->
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is website adapted from <a href="https://mathvista.github.io/"><span class="mathvista">MathVista</span></a>, licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+</footer>
+
+</body>
 </html>
