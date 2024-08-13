@@ -90,6 +90,21 @@ score_table = {
     "P.L": 53.49629517
   },
   "7": {
+    "Model": "Hunyuan-V",
+    "Source": "https://cloud.tencent.com/document/product/1729/105701",
+    "Avg.": 61.64300000000001,
+    "T.I": 66.03,
+    "T.M": 52.25,
+    "S.T": 67.11,
+    "S.J": 56.41,
+    "R.O": 74.07,
+    "R.A": 73.55,
+    "F.S": 82.61,
+    "F.B": 35.93,
+    "P.A": 61.75,
+    "P.L": 46.72
+  },
+  "8": {
     "Model": "GeminiPro-1.0",
     "Source": "https://ai.google.dev/pricing",
     "Avg.": 59.602326828,
@@ -104,7 +119,22 @@ score_table = {
     "P.A": 70.49,
     "P.L": 35.72166643
   },
-  "8": {
+  "9": {
+    "Model": "DeepSeek-VL-7b",
+    "Source": "https://github.com/deepseek-ai/DeepSeek-VL",
+    "Avg.": 58.92600000000001,
+    "T.I": 54.9,
+    "T.M": 39.88,
+    "S.T": 66.28,
+    "S.J": 58.0,
+    "R.O": 75.94,
+    "R.A": 58.09,
+    "F.S": 76.36,
+    "F.B": 74.17,
+    "P.A": 49.05,
+    "P.L": 36.59
+  },
+  "10": {
     "Model": "LLaVA-NeXT-13B",
     "Source": "https://github.com/haotian-liu/LLaVA",
     "Avg.": 58.25675183899999,
@@ -119,7 +149,7 @@ score_table = {
     "P.A": 53.783,
     "P.L": 55.46629617
   },
-  "9": {
+  "11": {
     "Model": "InternLM-Xcomposer2",
     "Source": "https://github.com/InternLM/InternLM-XComposer",
     "Avg.": 56.799970361999996,
@@ -134,7 +164,7 @@ score_table = {
     "P.A": 60.443,
     "P.L": 34.96685183
   },
-  "10": {
+  "12": {
     "Model": "MiniGPT-4-Llama2-7B",
     "Source": "https://github.com/Vision-CAIR/MiniGPT-4",
     "Avg.": 55.688127664,
@@ -149,7 +179,7 @@ score_table = {
     "P.A": 42.464,
     "P.L": 69.97518407
   },
-  "11": {
+  "13": {
     "Model": "InternVL-Chat-Vicuna-13B",
     "Source": "https://github.com/OpenGVLab/InternVL",
     "Avg.": 53.55716025600001,
@@ -164,7 +194,7 @@ score_table = {
     "P.A": 57.883,
     "P.L": 33.67759333
   },
-  "12": {
+  "14": {
     "Model": "mPLUG-Owl2",
     "Source": "https://github.com/X-PLUG/mPLUG-Owl/tree/main/mPLUG-Owl2",
     "Avg.": 52.740664808000005,
@@ -179,7 +209,7 @@ score_table = {
     "P.A": 56.552,
     "P.L": 34.5887037
   },
-  "13": {
+  "15": {
     "Model": "LVIS-Instruct4V",
     "Source": "https://github.com/X2FD/LVIS-INSTRUCT4V",
     "Avg.": 52.104074803,
@@ -194,7 +224,7 @@ score_table = {
     "P.A": 58.647,
     "P.L": 52.319248
   },
-  "14": {
+  "16": {
     "Model": "LLaVA-RLHF-13B",
     "Source": "https://github.com/llava-rlhf/LLaVA-RLHF",
     "Avg.": 52.09776470199999,
@@ -209,7 +239,7 @@ score_table = {
     "P.A": 53.882,
     "P.L": 59.69777667
   },
-  "15": {
+  "17": {
     "Model": "LLaVA-v1.5-13B",
     "Source": "https://github.com/haotian-liu/LLaVA",
     "Avg.": 51.656768493,
@@ -224,7 +254,7 @@ score_table = {
     "P.A": 54.078,
     "P.L": 36.19611087
   },
-  "16": {
+  "18": {
     "Model": "InternLM-XComposer",
     "Source": "https://github.com/InternLM/InternLM-XComposer/tree/main/InternLM-XComposer-1.0",
     "Avg.": 51.165129409,
@@ -239,7 +269,7 @@ score_table = {
     "P.A": 56.16,
     "P.L": 43.06055333
   },
-  "17": {
+  "19": {
     "Model": "Qwen-VL-Chat",
     "Source": "https://github.com/QwenLM/Qwen-VL",
     "Avg.": 51.067193405,
@@ -254,7 +284,7 @@ score_table = {
     "P.A": 53.596,
     "P.L": 37.1570359
   },
-  "18": {
+  "20": {
     "Model": "CogVLM",
     "Source": "https://github.com/THUDM/CogVLM",
     "Avg.": 50.523737855,
@@ -269,7 +299,7 @@ score_table = {
     "P.A": 40.199,
     "P.L": 24.78777667
   },
-  "19": {
+  "21": {
     "Model": "ShareGPT4V-13B",
     "Source": "https://github.com/InternLM/InternLM-XComposer/tree/main/projects/ShareGPT4V",
     "Avg.": 50.270555523,
@@ -284,7 +314,7 @@ score_table = {
     "P.A": 51.798,
     "P.L": 39.10499967
   },
-  "20": {
+  "22": {
     "Model": "LLaVA-v1.5-7B",
     "Source": "https://github.com/haotian-liu/LLaVA",
     "Avg.": 48.454297175,
@@ -299,7 +329,7 @@ score_table = {
     "P.A": 48.268,
     "P.L": 26.779444
   },
-  "21": {
+  "23": {
     "Model": "MiniGPT-4-Vicuna-13B",
     "Source": "https://github.com/Vision-CAIR/MiniGPT-4",
     "Avg.": 47.180936931,
@@ -314,7 +344,7 @@ score_table = {
     "P.A": 39.462,
     "P.L": 58.16407296
   },
-  "22": {
+  "24": {
     "Model": "InstructBLIP-FlanT5xxl",
     "Source": "https://github.com/salesforce/LAVIS",
     "Avg.": 43.45545923969999,
@@ -329,7 +359,7 @@ score_table = {
     "P.A": 58.14,
     "P.L": 9.272407167
   },
-  "23": {
+  "25": {
     "Model": "Otter",
     "Source": "https://github.com/Luodian/Otter",
     "Avg.": 40.818943506000004,
@@ -344,7 +374,7 @@ score_table = {
     "P.A": 40.94,
     "P.L": 20.4948147
   },
-  "24": {
+  "26": {
     "Model": "mPLUG-Owl",
     "Source": "https://github.com/X-PLUG/mPLUG-Owl/tree/main/mPLUG-Owl",
     "Avg.": 39.911662012,
