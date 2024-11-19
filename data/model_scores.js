@@ -60,7 +60,7 @@ score_table = {
     "P.L": 99.26944443
   },
   "5": {
-    "Model": "phi-3.5",
+    "Model": "Phi-3.5-Vision",
     "Source": "https://huggingface.co/microsoft/Phi-3.5-vision-instruct",
     "Avg.": 66.29,
     "T.I": 58.875952,
@@ -75,7 +75,7 @@ score_table = {
     "P.L": 58.219074
   },
   "6": {
-    "Model": "Phi-3",
+    "Model": "Phi-3-Vision",
     "Source": "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
     "Avg.": 64.258,
     "T.I": 58.62,
@@ -105,7 +105,7 @@ score_table = {
     "P.L": 53.49629517
   },
   "8": {
-    "Model": "cambrian-13b",
+    "Model": "Cambrian-13B",
     "Source": "https://huggingface.co/nyu-visionx/cambrian-13b",
     "Avg.": 63.47,
     "T.I": 64.359583,
@@ -120,7 +120,7 @@ score_table = {
     "P.L": 61.14037
   },
   "9": {
-    "Model": "qwen2-vl-chat",
+    "Model": "Qwen2-VL-Chat",
     "Source": "https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct",
     "Avg.": 63.28,
     "T.I": 68.73669,
@@ -135,7 +135,7 @@ score_table = {
     "P.L": 32.915556
   },
   "10": {
-    "Model": "cambrian-8b",
+    "Model": "Cambrian-8B",
     "Source": "https://huggingface.co/nyu-visionx/cambrian-8b",
     "Avg.": 62.69,
     "T.I": 62.068958,
@@ -150,7 +150,7 @@ score_table = {
     "P.L": 59.752037
   },
   "11": {
-    "Model": "internvl2-8b",
+    "Model": "InternVL2-8B",
     "Source": "https://huggingface.co/OpenGVLab/InternVL2-8B",
     "Avg.": 62.19,
     "T.I": 64.179917,
@@ -165,7 +165,7 @@ score_table = {
     "P.L": 36.067778
   },
   "12": {
-    "Model": "llava-v1.6-vicuna-13b-hf",
+    "Model": "LLaVA-v1.6-Vicuna-13B-hf",
     "Source": "https://huggingface.co/llava-hf/llava-v1.6-vicuna-13b-hf",
     "Avg.": 61.92,
     "T.I": 58.807714,
@@ -195,7 +195,7 @@ score_table = {
     "P.L": 46.72
   },
   "14": {
-    "Model": "llama3-llava-next-8b-hf",
+    "Model": "Llama3-LLaVA-NeXT-8b-hf",
     "Source": "https://huggingface.co/llava-hf/llama3-llava-next-8b-hf",
     "Avg.": 59.82,
     "T.I": 58.351185,
@@ -255,7 +255,7 @@ score_table = {
     "P.L": 55.46629617
   },
   "18": {
-    "Model": "llama-3-2-chat",
+    "Model": "Llama-3.2-Vision-Instruct",
     "Source": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct",
     "Avg.": 58.15,
     "T.I": 63.883339,
@@ -270,7 +270,7 @@ score_table = {
     "P.L": 49.715185
   },
   "19": {
-    "Model": "mplug-owl3-7b-240728",
+    "Model": "mPLUG-Owl3-7B",
     "Source": "https://huggingface.co/mPLUG/mPLUG-Owl3-7B-240728",
     "Avg.": 57.6,
     "T.I": 55.73378,
@@ -315,7 +315,7 @@ score_table = {
     "P.L": 69.97518407
   },
   "22": {
-    "Model": "llava-v1.6-mistral-7b-hf",
+    "Model": "LLaVA-v1.6-Mistral-7B-hf",
     "Source": "https://huggingface.co/llava-hf/llava-v1.6-mistral-7b-hf",
     "Avg.": 54.73,
     "T.I": 58.433131,
@@ -330,7 +330,7 @@ score_table = {
     "P.L": 47.034259
   },
   "23": {
-    "Model": "llava-v1.6-vicuna-7b-hf",
+    "Model": "LLaVA-v1.6-Vicuna-7B-hf",
     "Source": "https://huggingface.co/llava-hf/llava-v1.6-vicuna-7b-hf",
     "Avg.": 54.3,
     "T.I": 50.500869,
@@ -345,7 +345,7 @@ score_table = {
     "P.L": 40.86537
   },
   "24": {
-    "Model": "molmo-7b-d-0924",
+    "Model": "Molmo-7B",
     "Source": "https://huggingface.co/allenai/Molmo-7B-D-0924",
     "Avg.": 54.24,
     "T.I": 60.116125,
@@ -375,7 +375,7 @@ score_table = {
     "P.L": 33.67759333
   },
   "26": {
-    "Model": "llava-1.5-13b-hf",
+    "Model": "LLaVA-v1.5-13B-hf",
     "Source": "https://huggingface.co/llava-hf/llava-1.5-13b-hf",
     "Avg.": 53.39,
     "T.I": 53.877982,
@@ -510,7 +510,7 @@ score_table = {
     "P.L": 39.10499967
   },
   "35": {
-    "Model": "llava-1.5-7b-hf",
+    "Model": "LLaVA-v1.5-7B-hf",
     "Source": "https://huggingface.co/llava-hf/llava-1.5-7b-hf",
     "Avg.": 48.99,
     "T.I": 49.887673,
