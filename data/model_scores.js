@@ -345,6 +345,21 @@ score_table = {
     "P.L": 47.034259
   },
   "24": {
+    "Model": "DeepSeek-VL2",
+    "Source": "https://huggingface.co/deepseek-ai/deepseek-vl2",
+    "Avg.": 54.56,
+    "T.I": 58.202268,
+    "T.M": 45.043333,
+    "S.T": 54.820185,
+    "S.J": 61.45,
+    "R.O": 68.047034,
+    "R.A": 58.308519,
+    "F.S": 82.519861,
+    "F.B": 51.665556,
+    "P.A": 39.046667,
+    "P.L": 26.503889
+  },
+  "25": {
     "Model": "LLaVA-v1.6-Vicuna-7B-hf",
     "Source": "https://huggingface.co/llava-hf/llava-v1.6-vicuna-7b-hf",
     "Avg.": 54.2977096,
@@ -359,7 +374,7 @@ score_table = {
     "P.A": 58.166333,
     "P.L": 40.86537
   },
-  "25": {
+  "26": {
     "Model": "Molmo-7B",
     "Source": "https://huggingface.co/allenai/Molmo-7B-D-0924",
     "Avg.": 54.235713,
@@ -374,7 +389,7 @@ score_table = {
     "P.A": 65.55,
     "P.L": 34.14037
   },
-  "26": {
+  "27": {
     "Model": "InternVL-Chat-Vicuna-13B",
     "Source": "https://github.com/OpenGVLab/InternVL",
     "Avg.": 53.557160256,
@@ -389,7 +404,7 @@ score_table = {
     "P.A": 57.883,
     "P.L": 33.67759333
   },
-  "27": {
+  "28": {
     "Model": "LLaVA-v1.5-13B-hf",
     "Source": "https://huggingface.co/llava-hf/llava-1.5-13b-hf",
     "Avg.": 53.3893231,
@@ -404,7 +419,7 @@ score_table = {
     "P.A": 57.898333,
     "P.L": 37.031111
   },
-  "28": {
+  "29": {
     "Model": "CogVLM2-Llama3-Chat-19B",
     "Source": "https://huggingface.co/THUDM/cogvlm2-llama3-chat-19B",
     "Avg.": 52.926,
@@ -419,7 +434,7 @@ score_table = {
     "P.A": 47.12,
     "P.L": 36.14
   },
-  "29": {
+  "30": {
     "Model": "mPLUG-Owl2",
     "Source": "https://github.com/X-PLUG/mPLUG-Owl/tree/main/mPLUG-Owl2",
     "Avg.": 52.740664808,
@@ -434,7 +449,7 @@ score_table = {
     "P.A": 56.552,
     "P.L": 34.5887037
   },
-  "30": {
+  "31": {
     "Model": "LVIS-Instruct4V",
     "Source": "https://github.com/X2FD/LVIS-INSTRUCT4V",
     "Avg.": 52.104074803,
@@ -449,7 +464,7 @@ score_table = {
     "P.A": 58.647,
     "P.L": 52.319248
   },
-  "31": {
+  "32": {
     "Model": "LLaVA-RLHF-13B",
     "Source": "https://github.com/llava-rlhf/LLaVA-RLHF",
     "Avg.": 52.097764702,
@@ -464,7 +479,7 @@ score_table = {
     "P.A": 53.882,
     "P.L": 59.69777667
   },
-  "32": {
+  "33": {
     "Model": "LLaVA-v1.5-13B",
     "Source": "https://github.com/haotian-liu/LLaVA",
     "Avg.": 51.656768493,
@@ -479,7 +494,7 @@ score_table = {
     "P.A": 54.078,
     "P.L": 36.19611087
   },
-  "33": {
+  "34": {
     "Model": "InternLM-XComposer",
     "Source": "https://github.com/InternLM/InternLM-XComposer/tree/main/InternLM-XComposer-1.0",
     "Avg.": 51.165129409,
@@ -494,7 +509,7 @@ score_table = {
     "P.A": 56.16,
     "P.L": 43.06055333
   },
-  "34": {
+  "35": {
     "Model": "Qwen-VL-Chat",
     "Source": "https://github.com/QwenLM/Qwen-VL",
     "Avg.": 51.067193405,
@@ -509,7 +524,7 @@ score_table = {
     "P.A": 53.596,
     "P.L": 37.1570359
   },
-  "35": {
+  "36": {
     "Model": "CogVLM",
     "Source": "https://github.com/THUDM/CogVLM",
     "Avg.": 50.523737855,
@@ -524,7 +539,7 @@ score_table = {
     "P.A": 40.199,
     "P.L": 24.78777667
   },
-  "36": {
+  "37": {
     "Model": "ShareGPT4V-13B",
     "Source": "https://github.com/InternLM/InternLM-XComposer/tree/main/projects/ShareGPT4V",
     "Avg.": 50.270555523,
@@ -539,7 +554,7 @@ score_table = {
     "P.A": 51.798,
     "P.L": 39.10499967
   },
-  "37": {
+  "38": {
     "Model": "LLaVA-v1.5-7B-hf",
     "Source": "https://huggingface.co/llava-hf/llava-1.5-7b-hf",
     "Avg.": 48.9948722,
@@ -554,7 +569,7 @@ score_table = {
     "P.A": 50.827333,
     "P.L": 22.593333
   },
-  "38": {
+  "39": {
     "Model": "LLaVA-v1.5-7B",
     "Source": "https://github.com/haotian-liu/LLaVA",
     "Avg.": 48.454297175,
@@ -569,7 +584,7 @@ score_table = {
     "P.A": 48.268,
     "P.L": 26.779444
   },
-  "39": {
+  "40": {
     "Model": "DeepSeek-Janus-Pro-7B",
     "Source": "https://huggingface.co/deepseek-ai/Janus-Pro-7B",
     "Avg.": 48.124,
@@ -584,7 +599,7 @@ score_table = {
     "P.A": 43.45,
     "P.L": 34.0
   },
-  "40": {
+  "41": {
     "Model": "MiniGPT-4-Vicuna-13B",
     "Source": "https://github.com/Vision-CAIR/MiniGPT-4",
     "Avg.": 47.180936931,
@@ -599,7 +614,7 @@ score_table = {
     "P.A": 39.462,
     "P.L": 58.16407296
   },
-  "41": {
+  "42": {
     "Model": "InstructBLIP-FlanT5xxl",
     "Source": "https://github.com/salesforce/LAVIS",
     "Avg.": 43.4554592397,
@@ -614,7 +629,7 @@ score_table = {
     "P.A": 58.14,
     "P.L": 9.272407167
   },
-  "42": {
+  "43": {
     "Model": "Otter",
     "Source": "https://github.com/Luodian/Otter",
     "Avg.": 40.818943506,
@@ -629,7 +644,7 @@ score_table = {
     "P.A": 40.94,
     "P.L": 20.4948147
   },
-  "43": {
+  "44": {
     "Model": "mPLUG-Owl",
     "Source": "https://github.com/X-PLUG/mPLUG-Owl/tree/main/mPLUG-Owl",
     "Avg.": 39.911662012,
