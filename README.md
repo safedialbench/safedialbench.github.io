@@ -1,4 +1,4 @@
-# MultiTrust
+# SafeDialBench
 
 This website is adapted from [MathVista website](https://mathvista.github.io).
 
