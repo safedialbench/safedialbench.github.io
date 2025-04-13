@@ -7,16 +7,24 @@ function generateTable() {
           <td class="js-sort"><strong>Model</strong></td>
           <td class="js-sort"><strong>Source</strong></td>
           <td class="js-sort-number"><strong><u>Avg.</u></strong></td>
-          <td class="js-sort-number"><strong>T.I</strong></td>
-          <td class="js-sort-number"><strong>T.M</strong></td>
-          <td class="js-sort-number"><strong>S.T</strong></td>
-          <td class="js-sort-number"><strong>S.J</strong></td>
-          <td class="js-sort-number"><strong>R.O</strong></td>
-          <td class="js-sort-number"><strong>R.A</strong></td>
-          <td class="js-sort-number"><strong>F.S</strong></td>
-          <td class="js-sort-number"><strong>F.B</strong></td>
-          <td class="js-sort-number"><strong>P.A</strong></td>
-          <td class="js-sort-number"><strong>P.L</strong></td>
+          <td class="js-sort-number"><strong>A.I</strong></td>
+          <td class="js-sort-number"><strong>A.H</strong></td>
+          <td class="js-sort-number"><strong>A.C</strong></td>
+          <td class="js-sort-number"><strong>E.I</strong></td>
+          <td class="js-sort-number"><strong>E.H</strong></td>
+          <td class="js-sort-number"><strong>E.C</strong></td>
+          <td class="js-sort-number"><strong>F.I</strong></td>
+          <td class="js-sort-number"><strong>F.H</strong></td>
+          <td class="js-sort-number"><strong>F.C</strong></td>
+          <td class="js-sort-number"><strong>L.I</strong></td>
+          <td class="js-sort-number"><strong>L.H</strong></td>
+          <td class="js-sort-number"><strong>L.C</strong></td>
+          <td class="js-sort-number"><strong>M.I</strong></td>
+          <td class="js-sort-number"><strong>M.H</strong></td>
+          <td class="js-sort-number"><strong>M.C</strong></td>
+          <td class="js-sort-number"><strong>P.I</strong></td>
+          <td class="js-sort-number"><strong>P.H</strong></td>
+          <td class="js-sort-number"><strong>P.C</strong></td>
       </tr>`;
 
       // sort data to make sure the best model is on top
@@ -55,16 +63,24 @@ function generateTable() {
         }          
 
         
-        table += `<td>${entry['T.I'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['T.M'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['S.T'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['S.J'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['R.O'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['R.A'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['F.S'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['F.B'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['P.A'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['P.L'].toFixed(1).toString()}</td>`;
+        table += `<td>${entry['A.I'].toFixed(1).toString()}</td>`;
+        table += `<td>${entry['A.H'].toFixed(1).toString()}</td>`;
+        table += `<td>${entry['A.C'].toFixed(1).toString()}</td>`;
+        table += `<td>${entry['E.I'].toFixed(1).toString()}</td>`;
+        table += `<td>${entry['E.H'].toFixed(1).toString()}</td>`;
+        table += `<td>${entry['E.C'].toFixed(1).toString()}</td>`;
+        table += `<td>${entry['F.I'].toFixed(1).toString()}</td>`;
+        table += `<td>${entry['F.H'].toFixed(1).toString()}</td>`;
+        table += `<td>${entry['F.C'].toFixed(1).toString()}</td>`;
+        table += `<td>${entry['L.I'].toFixed(1).toString()}</td>`;
+        table += `<td>${entry['L.H'].toFixed(1).toString()}</td>`;
+        table += `<td>${entry['L.C'].toFixed(1).toString()}</td>`;
+        table += `<td>${entry['M.I'].toFixed(1).toString()}</td>`;
+        table += `<td>${entry['M.H'].toFixed(1).toString()}</td>`;
+        table += `<td>${entry['M.C'].toFixed(1).toString()}</td>`;
+        table += `<td>${entry['P.I'].toFixed(1).toString()}</td>`;
+        table += `<td>${entry['P.H'].toFixed(1).toString()}</td>`;
+        table += `<td>${entry['P.C'].toFixed(1).toString()}</td>`;
         table += '</tr>';
     }
 

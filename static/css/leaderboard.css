@@ -31,7 +31,14 @@ table#results.js-sort-10 tbody tr td:nth-child(11),
 table#results.js-sort-11 tbody tr td:nth-child(12),
 table#results.js-sort-12 tbody tr td:nth-child(13),
 table#results.js-sort-13 tbody tr td:nth-child(14),
-table#results.js-sort-14 tbody tr td:nth-child(15) {
+table#results.js-sort-14 tbody tr td:nth-child(15),
+table#results.js-sort-15 tbody tr td:nth-child(16),
+table#results.js-sort-16 tbody tr td:nth-child(17),
+table#results.js-sort-17 tbody tr td:nth-child(18),
+table#results.js-sort-18 tbody tr td:nth-child(19),
+table#results.js-sort-19 tbody tr td:nth-child(20),
+table#results.js-sort-20 tbody tr td:nth-child(21),
+table#results.js-sort-21 tbody tr td:nth-child(22) {
     background: #dee;
 }
 

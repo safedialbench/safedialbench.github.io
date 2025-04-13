@@ -6,7 +6,7 @@
         content="Benchmarking Trustworthiness of Multimodal Large Language Models">
   <meta name="keywords" content="MultiTrust, MMTrustEval">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> MultiTrust </title>
+  <title> SafeDialBench </title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
@@ -83,51 +83,62 @@
     <div class="column has-text-centered">
       <h1>
         <img src="static/images/multitrust.png" style="width:1.8em;vertical-align: middle" alt="Logo"/>
-        <span style="vertical-align: middle"> MultiTrust </span>
+        <span style="vertical-align: middle"> SafeDialBench </span>
       </h1>
-      <h2 class="is-size-3">A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models</h2>
+      <h2 class="is-size-3">A Fine-Grained Safety Benchmark for Large Language
+        Models in Multi-Turn Dialogues with Diverse Jailbreak Attacks</h2>
       <div class="is-size-5 publication-authors">
         <br>
         <span class="author-block">
-          <a href="https://zycheiheihei.github.io/">Yichi Zhang</a><sup style="color:#1db2ec">1</sup>,</span>
-        <span class="author-block">
-          <a href="https://multi-trust.github.io/">Yao Huang</a><sup style="color:#f31a1a">2</sup>,</span>
-        <span class="author-block">
-          <a href="https://multi-trust.github.io/">Yitong Sun</a><sup style="color:#f31a1a">2</sup>,</span>
-        <span class="author-block">
-          <a href="https://multi-trust.github.io/">Chang Liu</a><sup style="color:#ffac33">3</sup>,</span>
-        <span class="author-block">
-          <a href="https://persistz.github.io/">Zhe Zhao</a><sup style="color:#ec1de2">4</sup>,</span>
-        <span class="author-block">
-          <a href="https://multi-trust.github.io/">Zhengwei Fang</a><sup style="color:#1db2ec">1</sup>,</span>
-        <span class="author-block">
-          <a href="https://multi-trust.github.io/">Yifan Wang</a><sup style="color:#1db2ec">1</sup>,</span>
-        <span class="author-block">
-          <a href="https://huanranchen.github.io/">Huanran Chen</a><sup style="color:#1db2ec">1</sup>,</span>
-        <span class="author-block">
-          <a href="https://ml.cs.tsinghua.edu.cn/~xiaoyang/">Xiao Yang</a><sup style="color:#1db2ec">1</sup>,</span>
-        <span class="author-block">
-          <a href="https://sites.google.com/site/xingxingwei1988/?pli=1">Xingxing Wei</a><sup style="color:#f31a1a">2</sup>,</span>
-        <span class="author-block">
-          <a href="https://www.suhangss.me/">Hang Su</a><sup style="color:#1db2ec">1</sup>,</span>
-        <span class="author-block">
-          <a href="https://ml.cs.tsinghua.edu.cn/~yinpeng/">Yinpeng Dong</a><sup style="color:#1db2ec">1</sup>,</span>
-        <span class="author-block">
-          <a href="https://ml.cs.tsinghua.edu.cn/~jun/index.shtml">Jun Zhu</a><sup style="color:#1db2ec">1</sup></span>
+          <a href="https://hyecao.github.io/homepage/" target="_blank"> Hongye Cao</a><sup>*1</sup>,</span>
+          <span class="author-block">
+            <a href="#" target="_blank">Yanming Wang</a><sup>*1</sup>,</span>
+          <span class="author-block">
+            <a href="#" target="_blank">Sijia Jing</a><sup>*1</sup>,</span>
+          <span class="author-block">
+            <a href="#" target="_blank">Ziyue Peng</a><sup>*1</sup>,</span>
+          <span class="author-block">
+            <a href="#" target="_blank">Zhixin Bai</a><sup>1</sup>,</span>
+          <span class="author-block">
+            <a href="#" target="_blank">Zhe Cao</a><sup>1</sup>,</span>
+          <span class="author-block">
+            <a href="https://mengfn.github.io/" target="_blank">Meng Fang</a><sup>2</sup>,</span>
+          <span class="author-block">
+            <a href="https://fan-feng.com/" target="_blank">Fan Feng</a><sup>3</sup>,</span>
+          <span class="author-block">
+            <a href="https://liujiaheng.github.io/" target="_blank">Jiaheng Liu</a><sup></sup>,</span>
+          <span class="author-block">
+            <a href="https://is.nju.edu.cn/wby_en/main.htm" target="_blank">Boyan Wang</a><sup>1,4</sup>,</span>
+          <span class="author-block">
+            <a href="https://tianpeiyang.github.io/" target="_blank">Tianpei Yang</a><sup>1,4</sup>,</span>
+          <span class="author-block">
+            <a href="https://cs.nju.edu.cn/huojing/" target="_blank">Jing Huo</a><sup>†1</sup>,</span>
+          <span class="author-block">
+            <a href="https://cs.nju.edu.cn/gaoyang/" target="_blank">Yang Gao</a><sup>1,4</sup>,</span>
+          <span class="author-block">
+            <a href="#" target="_blank">Fanyu Meng</a><sup>†5</sup>,</span>
+          <span class="author-block">
+            <a href="#" target="_blank">Xi Yang</a><sup>6</sup>,</span>
+          <span class="author-block">
+            <a href="#" target="_blank">Chao Deng</a><sup>5</sup>,</span>
+          <span class="author-block">
+            <a href="https://scholar.google.es/citations?user=rBjPtmQAAAAJ&hl=en" target="_blank">Junlan Feng</a><sup>5</sup></span>
       </div>
 
       <div class="is-size-5 publication-authors">
-        <span class="author-block"><sup style="color:#1db2ec">1</sup>Tsinghua University,</span>
-        <span class="author-block"><sup style="color:#f31a1a">2</sup>Beihang University,</span>
-        <span class="author-block"><sup style="color:#ffac33">3</sup>Shanghai Jiaotong University,</span>
-        <span class="author-block"><sup style="color:#ec1de2">4</sup>RealAI</span>
+        <span class="author-block"><sup>1</sup>National Key Laboratory for Novel Software Technology, Nanjing University </span>
+                    <span class="author-block"><sup>2</sup>University of Liverpool </span>
+                    <span class="author-block"><sup>3</sup>University of California, San Diego </span>
+                    <span class="author-block"><sup>4</sup>School of Intelligence Science and Technology, Nanjing University </span>
+                    <span class="author-block"><sup>5</sup>China Mobile Research Institute, Beijing </span>
+                    <span class="author-block"><sup>6</sup>China Mobile (Suzhou) Software Technology Co., Ltd. Suzhou </span>
       </div>
       <div class="column has-text-centered">
         <div class="publication-links">
           <!-- PDF Link. -->
           <span class="link-block">
             <!-- @PAN TODO: change links -->
-            <a href="https://arxiv.org/pdf/2406.07057"
+            <a href="https://arxiv.org/pdf/2502.11090.pdf"
                class="external-link button is-normal is-rounded is-dark">
               <span class="icon">
                   <i class="fas fa-file-pdf"></i>
@@ -136,7 +147,7 @@
             </a>
           </span>
           <span class="link-block">
-            <a href="https://arxiv.org/abs/2406.07057"
+            <a href="https://arxiv.org/abs/2502.11090"
                class="external-link button is-normal is-rounded is-dark">
             <!-- <a href="https://lupantech.github.io/papers/arxiv23_mathvista.pdf"
                class="external-link button is-normal is-rounded is-dark"> -->
@@ -148,7 +159,7 @@
           </span>
           <!-- Code Link. -->
           <span class="link-block">
-            <a href="https://github.com/thu-ml/MMTrustEval"
+            <a href="https://github.com/drivetosouth/SafeDialBench-Dataset"
                class="external-link button is-normal is-rounded is-dark">
               <span class="icon">
                   <i class="fab fa-github"></i>
@@ -157,20 +168,20 @@
               </a>
           </span>
           <!-- Dataset Link. -->
-          <span class="link-block">
+          <!-- <span class="link-block">
             <a href="https://huggingface.co/datasets/thu-ml/MultiTrust"
                class="external-link button is-normal is-rounded is-dark">
               <span class="icon">
-                  <!-- <i class="far fa-images"></i> -->
+                  <i class="far fa-images"></i>
                   <p style="font-size:18px">🤗</p>
-                  <!-- 🔗 -->
+                  🔗
               </span>
               <span>Dataset</span>
             </a>
-          </span>
+          </span> -->
           <!-- Leaderboard Link. -->
           <span class="link-block">
-            <a href="https://multi-trust.github.io/#leaderboard"
+            <a href="#leaderboard"
                class="external-link button is-normal is-rounded is-dark">
               <span class="icon">
                   <p style="font-size:18px">🏆</p>
@@ -194,14 +205,9 @@
         <img src="static/images/framework.png" alt="framework" width="95%"/>
         <div class="content has-text-justified">
           <p>
-            Despite the superior capabilities of <b>Multimodal Large Language Models (MLLMs)</b> across diverse tasks, they still face significant trustworthiness challenges. Yet, current literature on the assessment of trustworthy MLLMs remains limited, lacking <b>a holistic evaluation</b> to offer thorough insights into future improvements.
-          </p>
-          <p>
-            In this work, we establish <b>MultiTrust</b>, the first comprehensive and unified benchmark on the trustworthiness of MLLMs across five primary aspects: <i>truthfulness</i>, <i>safety</i>, <i>robustness</i>, <i>fairness</i>, and <i>privacy</i>. Our benchmark employs a rigorous evaluation strategy that addresses both <b>multimodal risks</b> and <b>cross-modal impacts</b>, encompassing 32 diverse tasks with self-curated datasets.
-          </p>
-          <p>
-            Extensive experiments with 21 modern MLLMs reveal some previously unexplored trustworthiness issues and risks, highlighting the complexities introduced by the multimodality and underscoring the necessity for advanced methodologies to enhance their reliability. For instance, typical proprietary models still struggle with the perception of visually confusing images and are vulnerable to multimodal jailbreaking and adversarial attacks; MLLMs are more inclined to disclose privacy in text and reveal ideological and cultural biases even when paired with irrelevant images in inference, indicating that the multimodality amplifies the internal risks from base LLMs.
-          </p>
+            With the rapid advancement of Large Language Models (LLMs), the safety of LLMs has been a critical concern. </p><p>
+              Current benchmarks primarily concentrate on single-turn dialogues or single jailbreak attack method to assess the safety of LLMs. Additionally, these benchmarks have not taken into account the LLM's capability of identifying and handling unsafe information in detail. To address these issues, we propose a fine-grained benchmark <b>(SafeDialBench)</b> for evaluating the safety of LLMs across various jailbreak attacks in multi-turn dialogues. Specifically, we design a two-tier hierarchical taxonomy that considers 6 distinct dimensions and generates more than 4000 multi-turn dialogues in both Chinese and English under 22 dialogue scenarios. </p><p>
+              We employ 7 jailbreak attack strategies, such as reference attack and purpose reverse, to enhance the dataset quality for dialogue generation. Notably, we construct an innovative assessment framework of LLMs, measuring capabilities in detecting, and handling unsafe information and maintaining consistency when facing jailbreak attacks. Experimental results across 17 LLMs reveal that Yi-34B-Chat and GLM4-9B-Chat demonstrate superior safety performance, while Llama3.1-8B-Instruct and o3-mini exhibit safety vulnerabilities.          </p>
         </div>
       </div>
     </div>
@@ -214,14 +220,12 @@
   <div class="container" style="margin-bottom: 2vh;">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3" id="task">Task Pool</h2>
+        <h2 class="title is-3" id="task">Case</h2>
         <!-- <img src="static/images/task-description.png" alt="task-description" width="70%"/> -->
-        <img src="static/images/task-list.png" alt="task-list" width="70%"/>
+        <img src="static/images/case.png" alt="task-list" width="70%"/>
         <div class="content has-text-justified">
           <p class="mt-3">
-            <b>Task Overview:</b> We organize a two-level taxonomy containing 10 sub-aspects to better categorize the target behaviors to be evaluated. Based on the taxonomy, we curate 32 diverse tasks to cover realistic and comprehensive scenarios with trustworthy risks, including generative and discriminative, multimodal and text-only ones, as summarized above. To tackle the current lack of datasets dedicated for various scenarios under these sub-aspects, we construct 20 datasets based on the existing text, image, and multimodal datasets by adapting prompts, images, and annotations with both manual efforts and automatic methods. We further propose 8 novel datasets from scratch by collecting images from the Internet or synthesizing images with Stable Diffusion and other algorithms specifically for the designed tasks.<br> 
-            <img src="static/images/icon/circle-xmark-regular.svg" style="width:1.0em;vertical-align: middle" alt="circle-xmark"/> : off-the-shelf datasets from prior work; <img src="static/images/icon/circle-plus-solid.svg" style="width:1.0em;vertical-align: middle" alt="circle-plus"/> : datasets adapted to new tasks with additional images, prompts, and annotations; <img src="static/images/icon/circle-check-solid.svg" style="width:1.0em;vertical-align: middle" alt="circle-check"/> : datasets constructed from scratch. <img src="static/images/icon/file-image-regular.svg" style="width:1.0em;vertical-align: middle" alt="file-image"/> : tasks for revealing multimodal risks; <img src="static/images/icon/file-lines-regular.svg" style="width:1.0em;vertical-align: middle" alt="file-text"/> : tasks for studying cross-modal impacts. <img src="static/images/icon/circle-regular.svg" style="width:1.0em;vertical-align: middle" alt="circle"/> : rule-based evaluation (e.g., keywords matching); <img src="static/images/icon/circle-solid.svg" style="width:1.0em;vertical-align: middle" alt="circle-solid"/> : automatic evaluation by GPT-4 or other classifiers; <img src="static/images/icon/circle-half-stroke-solid.svg" style="width:1.0em;vertical-align: middle" alt="circle-left"/> : mixture evaluation. ASR stands for Attack Success Rate, RtA stands for Refuse-to-Answer rate, and Accuracy is sometimes abbreviated as Acc.
-          </p>  
+            An example of dialogue and model evaluation for ethics under scene construct attack against GLM4-9B-Chat.</p>  
         </div>
       </div>
     </div>
@@ -234,7 +238,7 @@
     <div class="columns is-centered">
       <div class="column is-four-fifths has-text-centered content">
         <div class="content">
-          <p class="title is-3" id="leaderboard">Leaderboard in MultiTrust (Updating...)
+          <p class="title is-3" id="leaderboard">Leaderboard in SafeDialBench (Updating...)
           </p>
           <div id="multitrust_leaderboard"></div>
         </div>
@@ -249,16 +253,15 @@
   <div class="container is-max-desktop content" style="margin-bottom: 2vh;">
     <h2 class="title is-3 has-text-centered">BibTeX</h2>
     <pre><code>
-@misc{zhang2024benchmarking,
-      title={Benchmarking Trustworthiness of Multimodal Large Language Models: A Comprehensive Study}, 
-      author={Yichi Zhang and Yao Huang and Yitong Sun and Chang Liu and Zhe Zhao and Zhengwei Fang and
-              Yifan Wang and Huanran Chen and Xiao Yang and Xingxing Wei and Hang Su and Yinpeng Dong and
-              Jun Zhu},
-      year={2024},
-      eprint={2406.07057},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-    }     
+      @misc{cao2025safedialbenchfinegrainedsafetybenchmark,
+        title={SafeDialBench: A Fine-Grained Safety Benchmark for Large Language Models in Multi-Turn Dialogues with Diverse Jailbreak Attacks}, 
+        author={Hongye Cao and Yanming Wang and Sijia Jing and Ziyue Peng and Zhixin Bai and Zhe Cao and Meng Fang and Fan Feng and Boyan Wang and Jiaheng Liu and Tianpei Yang and Jing Huo and Yang Gao and Fanyu Meng and Xi Yang and Chao Deng and Junlan Feng},
+        year={2025},
+        eprint={2502.11090},
+        archivePrefix={arXiv},
+        primaryClass={cs.CL},
+        url={https://arxiv.org/abs/2502.11090}, 
+  }  
     </code></pre>
   </div>
 </section>
