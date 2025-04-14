@@ -52,35 +52,35 @@ function generateTable() {
           // table += `<td>${entry.Method}</td>`;
           table += `<td><a href="${entry.Source}" class="ext-link" style="font-size: 16px;">Link</a></td>`;
           // table += `<td>${entry.Date}</td>`;
-          table += `<td><b class="best-score-text">${entry['Avg.'].toFixed(1).toString()}</b></td>`; // .toFixed(1): round to 1 decimal place
+          table += `<td><b class="best-score-text">${entry['Avg.'].toFixed(2).toString()}</b></td>`; // .toFixed(1): round to 1 decimal place
         }
         else {
           table += `<td><b>${entry.Model}</b></td>`;
           // table += `<td>${entry.Method}</td>`;
           table += `<td><a href="${entry.Source}" class="ext-link" style="font-size: 16px;">Link</a></td>`;
           // table += `<td>${entry.Date}</td>`;
-          table += `<td><b>${entry['Avg.'].toFixed(1).toString()}</b></td>`; // .toFixed(1): round to 1 decimal place
+          table += `<td><b>${entry['Avg.'].toFixed(2).toString()}</b></td>`; // .toFixed(1): round to 1 decimal place
         }          
 
         
-        table += `<td>${entry['A.I'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['A.H'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['A.C'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['E.I'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['E.H'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['E.C'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['F.I'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['F.H'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['F.C'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['L.I'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['L.H'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['L.C'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['M.I'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['M.H'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['M.C'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['P.I'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['P.H'].toFixed(1).toString()}</td>`;
-        table += `<td>${entry['P.C'].toFixed(1).toString()}</td>`;
+        table += `<td>${entry['A.I'].toFixed(2).toString()}</td>`;
+        table += `<td>${entry['A.H'].toFixed(2).toString()}</td>`;
+        table += `<td>${entry['A.C'].toFixed(2).toString()}</td>`;
+        table += `<td>${entry['E.I'].toFixed(2).toString()}</td>`;
+        table += `<td>${entry['E.H'].toFixed(2).toString()}</td>`;
+        table += `<td>${entry['E.C'].toFixed(2).toString()}</td>`;
+        table += `<td>${entry['F.I'].toFixed(2).toString()}</td>`;
+        table += `<td>${entry['F.H'].toFixed(2).toString()}</td>`;
+        table += `<td>${entry['F.C'].toFixed(2).toString()}</td>`;
+        table += `<td>${entry['L.I'].toFixed(2).toString()}</td>`;
+        table += `<td>${entry['L.H'].toFixed(2).toString()}</td>`;
+        table += `<td>${entry['L.C'].toFixed(2).toString()}</td>`;
+        table += `<td>${entry['M.I'].toFixed(2).toString()}</td>`;
+        table += `<td>${entry['M.H'].toFixed(2).toString()}</td>`;
+        table += `<td>${entry['M.C'].toFixed(2).toString()}</td>`;
+        table += `<td>${entry['P.I'].toFixed(2).toString()}</td>`;
+        table += `<td>${entry['P.H'].toFixed(2).toString()}</td>`;
+        table += `<td>${entry['P.C'].toFixed(2).toString()}</td>`;
         table += '</tr>';
     }
 
