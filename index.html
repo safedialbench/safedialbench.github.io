@@ -203,6 +203,10 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Introduction</h2>
         <img src="static/images/framework.png" alt="framework" width="95%"/>
+        <figcaption style="text-align: justify;">Figure 1: Overall framework of SafeDialBench. 1) Safety Taxonomy: propose a safety taxonomy
+          comprising 6 categories. 2) Data Construction: construct datasets with 7 jailbreak attack methods
+          based on 6 categories within 22 dialogue scenarios 3) LLM Evaluation: evaluate LLMs based on 3
+          safety abilities with LLMs and human judgment.</figcaption>
         
 
         <div class="content has-text-justified">
@@ -212,6 +216,7 @@
               We employ 7 jailbreak attack strategies, such as reference attack and purpose reverse, to enhance the dataset quality for dialogue generation. Notably, we construct an innovative assessment framework of LLMs, measuring capabilities in detecting, and handling unsafe information and maintaining consistency when facing jailbreak attacks. Experimental results across 17 LLMs reveal that Yi-34B-Chat and GLM4-9B-Chat demonstrate superior safety performance, while Llama3.1-8B-Instruct and o3-mini exhibit safety vulnerabilities.          </p>
         </div>
         <img src="static/images/figure2.png" alt="task-list" width="100%"/>
+        <figcaption style="text-align: center;">Figure 2: (a) Two-tier hierarchical safety taxonomy. (b) Process of data generation.</figcaption>
       </div>
     </div>
     <!--/ Abstract. -->
@@ -226,11 +231,15 @@
         <h2 class="title is-3" id="task">Evaluation Examples</h2>
         <!-- <img src="static/images/task-description.png" alt="task-description" width="70%"/> -->
         <img src="static/images/case.png" alt="task-list" width="85%"/>
+        <figcaption style="text-align: center;"> Figure 3: Example of dialogue and model evaluation for ethics under scene construct attack.</figcaption>
+
         <img src="static/images/figure8.png" alt="task-list" width="85%"/>
+        <figcaption style="text-align: center;">Figure 4: Examples of model responses and corresponding evaluations under role play attack.</figcaption>
+
 
         <div class="content has-text-justified">
-          <p class="mt-3">
-            An Example of dialogue and model evaluation for ethics under scene construct attack against GLM4-9B-Chat, and an example of model responses and corresponding evaluations under role play attack.</p>  
+          <!-- <p class="mt-3">
+            An Example of dialogue and model evaluation for ethics under scene construct attack against GLM4-9B-Chat, and an example of model responses and corresponding evaluations under role play attack.</p>   -->
         </div>
       </div>
     </div>
@@ -244,6 +253,9 @@
         <h2 class="title is-3" id="task">Results</h2>
         <!-- <img src="static/images/task-description.png" alt="task-description" width="70%"/> -->
         <img src="static/images/figure4.png" alt="task-list" width="100%"/>
+        <figcaption style="text-align: center;"> Figure 5: (a) ASR scores by models. (b) Agreement between human experts and model evaluation.</figcaption>
+
+        
         <!-- <img src="static/images/figure8.png" alt="task-list" width="85%"/> -->
 
         <div class="content has-text-justified">
@@ -306,7 +318,7 @@
         </div>
       </div>
     </div>
-  <!-- </div> -->
+  </div>
 </footer> -->
 
 </body>
