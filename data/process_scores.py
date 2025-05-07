@@ -8,7 +8,7 @@ for index, row in data.iterrows():
     model_result = {}
     model_result["Model"] = row["Model"]
     model_result["Source"] = row["Source"]
-    model_result["Avg."] = row["Avg."]
+    model_result["ASR"] = row["ASR"]
     model_result["A.I"] = row["A.I"]
     model_result["A.H"] = row["A.H"]
     model_result["A.C"] = row["A.C"]

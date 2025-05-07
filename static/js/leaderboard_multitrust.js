@@ -6,7 +6,7 @@ function generateTable() {
           <td class="js-sort-number"><strong>#</strong></td>
           <td class="js-sort"><strong>Model</strong></td>
           <td class="js-sort"><strong>Source</strong></td>
-          <td class="js-sort-number"><strong><u>Avg.</u></strong></td>
+          <td class="js-sort-number"><strong><u>ASR</u></strong></td>
           <td class="js-sort-number"><strong>A.I</strong></td>
           <td class="js-sort-number"><strong>A.H</strong></td>
           <td class="js-sort-number"><strong>A.C</strong></td>
@@ -52,14 +52,14 @@ function generateTable() {
           // table += `<td>${entry.Method}</td>`;
           table += `<td><a href="${entry.Source}" class="ext-link" style="font-size: 16px;">Link</a></td>`;
           // table += `<td>${entry.Date}</td>`;
-          table += `<td><b class="best-score-text">${entry['Avg.'].toFixed(2).toString()}</b></td>`; // .toFixed(1): round to 1 decimal place
+          table += `<td><b class="best-score-text">${entry['ASR'].toFixed(2).toString()}</b></td>`; // .toFixed(1): round to 1 decimal place
         }
         else {
           table += `<td><b>${entry.Model}</b></td>`;
           // table += `<td>${entry.Method}</td>`;
           table += `<td><a href="${entry.Source}" class="ext-link" style="font-size: 16px;">Link</a></td>`;
           // table += `<td>${entry.Date}</td>`;
-          table += `<td><b>${entry['Avg.'].toFixed(2).toString()}</b></td>`; // .toFixed(1): round to 1 decimal place
+          table += `<td><b>${entry['ASR'].toFixed(2).toString()}</b></td>`; // .toFixed(1): round to 1 decimal place
         }          
 
         
