@@ -167,18 +167,6 @@
               <span>Code</span>
               </a>
           </span>
-          <!-- Dataset Link. -->
-          <!-- <span class="link-block">
-            <a href="https://huggingface.co/datasets/thu-ml/MultiTrust"
-               class="external-link button is-normal is-rounded is-dark">
-              <span class="icon">
-                  <i class="far fa-images"></i>
-                  <p style="font-size:18px">🤗</p>
-                  🔗
-              </span>
-              <span>Dataset</span>
-            </a>
-          </span> -->
           <!-- Leaderboard Link. -->
           <span class="link-block">
             <a href="#leaderboard"
@@ -187,6 +175,17 @@
                   <p style="font-size:18px">🏆</p>
               </span>
               <span>Leaderboard</span>
+            </a>
+          </span>
+          <!-- Dataset Link. -->
+          <span class="link-block">
+            <a href="https://huggingface.co/datasets/HongyeCao/SafeDialBench"
+               class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <!-- <i class="far fa-images"></i> -->
+                  <p style="font-size:18px">🤗</p>
+              </span>
+              <span>Datasets</span>
             </a>
           </span>
         </div>
@@ -215,7 +214,7 @@
               Current benchmarks primarily concentrate on single-turn dialogues or single jailbreak attack method to assess the safety of LLMs. Additionally, these benchmarks have not taken into account the LLM's capability of identifying and handling unsafe information in detail. To address these issues, we propose a fine-grained benchmark <b>(SafeDialBench)</b> for evaluating the safety of LLMs across various jailbreak attacks in multi-turn dialogues. Specifically, we design a two-tier hierarchical taxonomy that considers 6 distinct dimensions and generates more than 4000 multi-turn dialogues in both Chinese and English under 22 dialogue scenarios.
               We employ 7 jailbreak attack strategies, such as reference attack and purpose reverse, to enhance the dataset quality for dialogue generation. Notably, we construct an innovative assessment framework of LLMs, measuring capabilities in detecting, and handling unsafe information and maintaining consistency when facing jailbreak attacks. Experimental results across 17 LLMs reveal that Yi-34B-Chat and GLM4-9B-Chat demonstrate superior safety performance, while Llama3.1-8B-Instruct and o3-mini exhibit safety vulnerabilities.          </p>
         </div>
-        <img src="static/images/figure2.png" alt="task-list" width="100%"/>
+        <img src="static/images/taxonomy.jpg" alt="task-list" width="100%"/>
         <figcaption style="text-align: center;">Figure 2: (a) Two-tier hierarchical safety taxonomy. (b) Process of data generation.</figcaption>
       </div>
     </div>
