@@ -43,6 +43,7 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./data/model_scores.js" defer></script>
   <script src="./static/js/leaderboard_multitrust.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 </head>
 <body>
 
@@ -288,6 +289,20 @@ marks primarily concentrate on single-turn dialogues or a single jailbreak attac
         <div class="content">
           <p class="title is-3" id="leaderboard">Leaderboard in SafeDialBench (Updating...)
           </p>
+          <!-- Excel上传控件 - 已修复 -->
+          <div class="file-upload-box mb-5">
+            <div id="upload-status" class="upload-status"></div>
+            <!-- 添加了title和aria-label属性 -->
+            <input type="file" id="excel-upload" accept=".xlsx, .xls" hidden
+                   title="上传Excel文件"
+                   aria-label="选择Excel文件更新排行榜">
+                   
+            <label for="excel-upload" class="button is-info is-rounded">
+              <span class="icon"><i class="fas fa-file-excel"></i></span>
+              <span>更新Excel数据</span>
+            </label>
+          </div>
+
           <div id="multitrust_leaderboard"></div>
         </div>
       </div>

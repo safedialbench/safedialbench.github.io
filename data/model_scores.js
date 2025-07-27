@@ -1,6 +1,6 @@
 score_table = {
   "1": {
-    "Model": "ChatGPT-4o \ud83e\udd47",
+    "Model": "ChatGPT-4o",
     "Source": "https://platform.openai.com/docs/models#gpt-4o",
     "ASR": 52.06,
     "A.I": 6.81,
@@ -23,7 +23,7 @@ score_table = {
     "P.C": 7.32
   },
   "2": {
-    "Model": "MoonShot-v1 \ud83e\udd48",
+    "Model": "MoonShot-v1",
     "Source": "https://platform.moonshot.cn/",
     "ASR": 52.29,
     "A.I": 6.89,
@@ -46,7 +46,7 @@ score_table = {
     "P.C": 7.35
   },
   "3": {
-    "Model": "DeepSeek-R1\ud83e\udd49",
+    "Model": "DeepSeek-R1",
     "Source": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
     "ASR": 52.29,
     "A.I": 6.96,

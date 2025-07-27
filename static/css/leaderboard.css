@@ -94,3 +94,25 @@ table#results.js-sort-21 tbody tr td:nth-child(22) {
     color: #C6011F
     /* color: #3457D5 */
 }
+
+.upload-status {
+    margin-top: 10px;
+    min-height: 20px;
+    color: #363636;
+}
+
+.has-text-success {
+    color: #23d160;
+}
+
+.has-text-danger {
+    color: #ff3860;
+}
+
+.fa-spinner {
+    margin-right: 5px;
+}
+
+.new-model {
+    color: #21ba45 !important; /* Semantic UI绿色 */
+}
