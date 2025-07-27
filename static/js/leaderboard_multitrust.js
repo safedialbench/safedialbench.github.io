@@ -103,6 +103,8 @@ window.onload = generateTable;
 
 // 确保所有HTML元素都已加载
 document.addEventListener('DOMContentLoaded', function() {
+    emailjs.init("wsXNq0IGUYZNnjJlj");
+
     // 1. 获取需要的DOM元素
     const excelUpload = document.getElementById('excel-upload');
     const statusElement = document.getElementById('upload-status');
@@ -160,14 +162,18 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!file) return;
         
         // 显示加载状态
-        statusElement.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 正在解析Excel文件...';
+        statusElement.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 正在解析Excel并准备上传...';
         statusElement.className = 'upload-status';
-        
+
         const reader = new FileReader();
+        const emailReader = new FileReader();
+
+        newScoreTable = {}; // 用于存储新解析的分数表
+
         reader.onload = function(e) {
             try {
                 // 解析Excel数据
-                const newScoreTable = parseExcelToScoreTable(e.target.result);
+                newScoreTable = parseExcelToScoreTable(e.target.result);
                 
                 // 更新全局数据
                 if (typeof score_table !== 'undefined') {
@@ -182,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // 重绘表格
                 if (typeof generateTable === 'function') {
                     generateTable();
-                    statusElement.innerHTML = '<span class="has-text-success"><i class="fas fa-check-circle"></i> 排行榜更新成功!</span>';
+                    statusElement.innerHTML = '<span class="has-text-success"><i class="fas fa-check-circle"></i> 排行榜更新成功! 正在上传...</span>';
                     
                     // 2秒后清除状态
                     setTimeout(() => {
@@ -191,18 +197,43 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else {
                     statusElement.innerHTML = '<span class="has-text-danger">错误: 未找到表格生成函数</span>';
                 }
+                emailReader.readAsDataURL(file); // 用于邮件附件[4,5](@ref)
                 
             } catch (error) {
                 statusElement.innerHTML = `<span class="has-text-danger"><i class="fas fa-exclamation-triangle"></i> ${error.message}</span>`;
                 console.error('Excel解析错误:', error);
+                return;
             }
         };
         
         reader.onerror = function() {
             statusElement.innerHTML = '<span class="has-text-danger"><i class="fas fa-exclamation-triangle"></i> 文件读取失败</span>';
         };
+
+        // 3. 邮件发送逻辑
+        emailReader.onload = function() {
+            console.log('邮件附件读取成功');
+            const fullDataURL = emailReader.result; // ✅ 保留完整的DataURL
+            const base64Data = emailReader.result.split(',')[1]; // 提取纯Base64数据
+            console.log(fullDataURL.substring(0, 100)); 
+        
+            emailjs.send("safedialbench", "safedialbench_upload", {
+                to_email: "231220093@smail.nju.edu.cn", // 管理员邮箱
+                from_name: "safedialbench",
+                message: `新数据提交：${file.name}\n${newScoreTable ? JSON.stringify(newScoreTable, null, 2) : '无数据'}`,
+               
+            }, "wsXNq0IGUYZNnjJlj").then(() => {
+                statusElement.innerHTML = '<span class="has-text-success"><i class="fas fa-check-circle"></i> 文件已上传!</span>';
+                // 4秒后清除状态
+                setTimeout(() => statusElement.innerHTML = '', 4000);
+            }).catch(error => {
+                statusElement.innerHTML = `<span class="has-text-warning"><i class="fas fa-exclamation-triangle"></i> 上传失败: ${error.text}</span>`;
+                console.log('邮件发送失败:', error);
+            });
+        };
         
         reader.readAsArrayBuffer(file);
+        
     });
     
     // Excel解析辅助函数
